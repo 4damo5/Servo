@@ -13,9 +13,9 @@ servo.period(PERIOD); // 20ms period
 servo.write(DUTY_MIN); // 2.5% duty cycle
 
 while (true) {
-    servo.period(DUTY_MIN);
+    servo.write(DUTY_MIN);
     delay(1000);
-    servo.period(DUTY_MAX);
+    servo.write(DUTY_MAX);
     delay(1000);
 }
 
